@@ -1,6 +1,6 @@
 hardhat test code 
 
-```js
+
 const { ethers } = require("hardhat");
 
 async function main () {
@@ -71,4 +71,4 @@ main().catch((error) => {
   console.error(error);
   process.exit(1);
 })
-```
+
