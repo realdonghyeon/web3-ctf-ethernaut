@@ -14,7 +14,7 @@ async function main () {
   const contract = await ethers.getContractFactory("Fallback");
   const deploycontract = await contract.deploy();
   const provider = new ethers.JsonRpcProvider("http://localhost:8545");
-  const mywallet = new ethers.Wallet("0xa267530f49f8280200edf313ee7af6b827f2a8bce2897751d06a843f644967b1", provider);
+  const mywallet = new ethers.Wallet("0xa267530f49f8280200edf313ee7af6b827f2a8bce2897751d06a843f644967b1", provider); //local private key
   const address = deploycontract.target;
   const abicontract = new ethers.Contract(address, vicmabi, mywallet);
   const ownerAddress = await deploycontract.owner();
