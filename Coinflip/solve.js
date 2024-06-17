@@ -12,7 +12,7 @@ async function main () {
   console.log("Flip contract deployed at: ", deploycontract_v.target);
   console.log("Attack contract deployed at: ", deploycontract_a.target);
 
-  for (var i = 0; i<10; i++){
+  for (var i=0; i<10; i++){
     await deploycontract_a.letflip();
   }
 
