@@ -7,7 +7,7 @@ import "./Telephone.sol";
 contract Attack {
   Telephone public telephone;
 
-  construct(address _telephoneaddress) {
+  constructor(address _telephoneaddress) {
     telephone = Telephone(_telephoneaddress);
   }
 
