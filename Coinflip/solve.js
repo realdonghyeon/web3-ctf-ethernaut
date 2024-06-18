@@ -3,7 +3,7 @@ const { ethers } = require("hardhat");
 
 async function main () {
 
-  const [vicm, attacker] = await ethers.getSigners();
+  const [vicm] = await ethers.getSigners();
   const vicmcontract = await ethers.getContractFactory("CoinFlip");
   const attackcontract = await ethers.getContractFactory("Attack");
   const deploycontract_v = await vicmcontract.deploy();
