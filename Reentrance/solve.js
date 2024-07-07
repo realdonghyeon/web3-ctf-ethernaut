@@ -44,9 +44,6 @@ async function main () {
 
     console.log("After attack contract balance: ", bal);
 
-    bal = await contract.balanceOf(useraddr);
-
-    console.log(bal);
 }
 
 main().catch((error) => {
