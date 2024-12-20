@@ -3,7 +3,7 @@ pragma solidity ^0.8.0;
 import "hardhat/console.sol";
 
 contract makeByte {
-    function deployd() external returns (uint256) {
+    function deployd() external {
         bytes memory byteCode = '\x60\x80\x60\x0c\x60\x00\x39\x60\x0a\x60\x00\xf3\x60\x2a\x60\x40\x52\x60\x20\x60\x40\xf3';
         /* 
             PUSH1 0x80
@@ -29,7 +29,5 @@ contract makeByte {
 
         console.log(deployAddr);
         console.log(size);
-        
-        return size;
     }
 }
